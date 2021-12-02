@@ -13,3 +13,14 @@ variable "auto_create_subnetworks" {
   description = "Será criado automaticamente redes para todas regiões? default: true"
   default     = true
 }
+
+variable "routing_mode" {
+  type = string
+  description = "Modo de roteamento"
+  default = "REGIONAL"
+}
+
+variable "project" {
+  type = string
+  description = "O nome do projeto que deve estar linkado com esta rede"
+}
